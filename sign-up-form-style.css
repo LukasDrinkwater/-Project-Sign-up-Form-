@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "norseFont";
+    src: url("Fonts/Norse-Bold.otf");
+    font-weight: normal;
+}
+
+/* layout stuff */
+
+
+body {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-grow: 1; */
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 750px;
+    width: 970px;
+    
+}
+
+
+.bannerTextContainer,
+.formContainer,
+.footerContainer {
+    /* flex-grow: 1; */
+    height: 33%;
+   
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    max-width: 620px;
+    flex-shrink: 0;
+    min-width: 620px;
+}
+
+
+/* left image stuff */
+
+.pictureLeftContainer {
+    /* background-image: url("images/forest-pic.jpg"); */
+    align-items: center;
+    flex-grow: 1;
+    max-width: 350px;
+    
+}
+
+.picture {
+    display: flex;
+    background: url("images/forest-pic.jpg");
+    background-size: cover;
+    align-items: center;
+    height: 100%;
+}
+
+
+.pictureLeftImg {
+    display: none;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    /* needs to be rgba to set the opacity. Or do $color: #ff0000;
+    rgba($color, 0.5) if you want to use hexidecimal*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 80px;
+}
+
+.logoContainer img {
+    width: auto;
+    height: 80px;
+}
+
+.logoText {
+    display: flex;
+    font: 5em "norseFont";
+    color: #f0f0f0;
+    justify-content: center;
+}
+
+/* bannerText container stuff */
+
+.bannerTextContainer {          
+   display: flex;
+   align-items: center;
+}
+
+.bannerText {
+    padding-left: 30px;
+    padding-top: 30px;
+    font: 1.25em sans-serif;
+    font-weight: bold;
+}
+
+
+/* formContainer stuff */
+
+.formHeader {
+    margin-left: 25px;
+    font: 1.25em sans-serif;
+    font-weight: bold;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+fieldset {
+    border: none;
+}
+
+
+.userForm {
+    display: flex;
+    flex-wrap: wrap;
+    font: 1em sans-serif;   
+}
+
+.userForm div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 5px; /* adjust margin as needed */
+}
+
+.form input {
+    border: 2px solid #E5E7EB;
+    width: 220px;
+    height: 20px;
+    border-radius: 5px;
+    /* need to put outline: none; to remove the black focus border and alow
+    it to use the one I have made */
+    outline: none;
+}
+
+label {
+    margin-bottom: 2px;
+    
+}
+
+.row input:focus {
+    border: 2px solid #256dff;
+    box-shadow: 2px 2px 2px rgb(110, 110, 110);
+}
+
+
+
+.form div {
+    margin: 8px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*   width: calc(50% - 10px); /* adjust width as needed */ 
+
+
+/* footerContainer stuff */
+
+.createAccount {
+    background-color:#596D48;
+    margin-left: 30px;
+    height: 40px;
+    width: 200px;
+    font: 1em sans-serif; 
+    font-weight: bold;
+    color: #eeeeee;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.footerContainer p {
+    font: 1em sans-serif; 
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.footerContainer a {
+    color: #596D48;
+    font: 1em sans-serif; 
+    font-weight: bold;
+}

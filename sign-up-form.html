@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="sign-up-form-style.css">
+    <script defer src="sign-up-form.js"></script>
+</head>
+<body>
+    
+    
+<div class="mainContainer">
+
+    <div class="pictureLeftContainer"> 
+        <div class="picture">
+            <div class="logoContainer">
+                <img src="images/odin-logo.png" alt="The Odin Project Logo">
+                <div class="logoText">ODIN</div>
+            </div>
+        </div>  
+        
+        <img class="pictureLeftImg" alt="background picture of green fern leaves. ">
+    </div>
+    <div class="rightContainer">
+        <div class="bannerTextContainer">
+            <p class="bannerText">This is not a real online Service
+            You need something like this in your life to help you
+            realise your deepest dreams. <br> Sign up <i>now</i>
+            to get started. <br> <br> You <i>know</i> you want to.
+            </p>
+        </div>
+        <div class="formContainer">
+        <div class="formHeader">Let's do this!</div>
+        <form class="userForm" action="/" method="GET">    
+            <fieldset>
+                <!-- <legend>User Form</legend> -->
+                
+                <div class="form">
+                    <div class="row" id="firstNameBox">
+                        <label for="fistName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required>
+
+                    </div>
+                    <div class="row" id="lastNameBox">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    
+
+                    </div>
+                    <div class="row" id="emailBox">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    
+
+                    </div>
+                    <div class="row" id="phoneNumberBox">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                    
+
+                    </div>
+                    <div class="row" id="passwordBox">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+
+                    </div>
+                    <div class="row" id="confirmPasswordBox">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+
+                    </div>
+                </div>
+                </div>
+                <div class="footerContainer">
+                    <button type="submit" class="createAccount" id="createAccount">Create Account</button>
+                    <p>Already have an account <a href="url">Log in</a> </p>
+                </div>
+            </fieldset>
+        </form>    
+    </div>
+
+
+</div>
+
+
+    
+</body>
+
+</html>
